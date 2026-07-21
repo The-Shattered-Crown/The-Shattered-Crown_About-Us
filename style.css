@@ -46,7 +46,7 @@ nav > ul > li > a {
     top: 0;
     text-decoration: none;
     padding: 5px;
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     transition: 0.3s;
 }
 
@@ -172,7 +172,7 @@ nav > ul > li > a:active {
 }
 
 #About > p {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -183,7 +183,7 @@ nav > ul > li > a:active {
 }
 
 #Team > p {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -194,7 +194,7 @@ nav > ul > li > a:active {
 }
 
 #Projects > p {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -205,7 +205,7 @@ nav > ul > li > a:active {
 }
 
 #Socials > p {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -216,7 +216,7 @@ nav > ul > li > a:active {
 }
 
 #Contact > p {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
 }
@@ -283,7 +283,7 @@ nav > ul > li > a:active {
     }
 }
 #Team ul li {
-    font-family: "Schoolbell", cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 30px;
     color: white;
 }
