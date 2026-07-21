@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #28282b;
+    min-height: 200vh;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #161618;
+    padding: 15px;
+    z-index: 10;
+    position: fixed;
+}
+
+nav > ul {
+    float: right;
+}
+
+nav > ul > li {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+nav > ul > li > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Schoolbell", cursive;
+    transition: 0.3s;
+}
+
+nav > ul > li > a:hover {
+    transform: translateY(5px);
+}
+
+nav > ul > li > a:active {
+    transform: scale(2);
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+.main-section > button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Navigation-List {
+    transition: 0.3s ease-in-out;
+}
+
+.main-section > button:hover {
+    background: rgb(204, 204, 204);
+    letter-spacing: 3px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.main-section > button:active {
+    transform: scale(0.9);
+}
+
+#Header {
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.645)),
+        url("Header1.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#Header > h1 {
+    font-size: 80px;
+    color: white;
+    font-family: "Barrio", system-ui;
+    text-align: center;
+}
+
+#Navigation-Button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #28282b;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+    text-align: center;
+    display: none;
+}
+
+#Close-Button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #28282b;
+    color: white;
+    font-size: 20px;
+    font-family: "Barrio", system-ui;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+
+.Text-Underline {
+    font-size: 80px;
+    color: white;
+    font-family: "Barrio", system-ui;
+    position: relative;
+    display: inline-block;
+}
+
+.Text-Underline::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, cyan, blue, purple, orange);
+    border-radius: 50px;
+}
+
+#About > p {
+    font-family: "Schoolbell", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#About {
+    text-align: center;
+    padding: 25px;
+}
+
+#Team > p {
+    font-family: "Schoolbell", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#Team {
+    text-align: center;
+    padding: 25px;
+}
+
+#Projects > p {
+    font-family: "Schoolbell", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#Projects {
+    text-align: center;
+    padding: 25px;
+}
+
+#Socials > p {
+    font-family: "Schoolbell", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#Socials {
+    text-align: center;
+    padding: 25px;
+}
+
+#Contact > p {
+    font-family: "Schoolbell", cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#Contact {
+    text-align: center;
+    padding: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+    #Navigation-Button,
+    #Close-Button {
+        display: block;
+    }
+
+    nav {
+        height: 60px;
+        padding: 10px;
+    }
+
+    nav > ul {
+        display: block;
+        width: 70%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0px;
+        left: -70%;
+    }
+
+    nav > ul > li {
+        display: block;
+        margin-top: 10vh;
+    }
+
+    .main-section {
+        padding: 0;
+    }
+
+    #Team {
+        padding: 5vh;
+        text-align: left;
+    }
+
+    #Team > h1 {
+        font-size: 50px;
+    }
+
+    .Text-Underline {
+        font-size: 40px;
+    }
+
+    .Text-Underline::before {
+        height: 10px;
+    }
+
+    #About {
+        padding: 30px;
+        text-align: left;
+    }
+
+    #About > p {
+        font-size: 20px;
+    }
+}
+#Team ul li {
+    font-family: "Schoolbell", cursive;
+    font-size: 30px;
+    color: white;
+}
