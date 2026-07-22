@@ -69,7 +69,8 @@ nav > ul > li > a:active {
 
 .main-section > ul > li
 {
-    text-decoration: none;
+    
+    list-style-type: none;
 }
 
 .main-section > button {
