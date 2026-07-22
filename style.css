@@ -67,6 +67,11 @@ nav > ul > li > a:active {
     text-align: center;
 }
 
+.main-section > ul > li
+{
+    text-decoration: none;
+}
+
 .main-section > button {
     width: 150px;
     height: 50px;
