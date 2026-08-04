@@ -65,10 +65,17 @@ nav > ul > li > a:active {
     padding: 25px;
     position: relative;
     top: 60px;
+    text-align: center;
 }
 
 .main-section > ul > li {
     list-style-type: none;
+}
+
+.main-section > p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 .main-section > button {
@@ -164,18 +171,6 @@ nav > ul > li > a:active {
     transform: translateX(-50%);
     background: linear-gradient(90deg, cyan, blue, purple, orange);
     border-radius: 50px;
-}
-
-/* Shared section styles */
-.section {
-    text-align: center;
-    padding: 25px;
-}
-
-.section > p {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 30px;
 }
 
 #Team ul li {
