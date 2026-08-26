@@ -7,23 +7,9 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <nav>
-            <ul id="Navigation-List">
-                <button id="Close-Button">x</button>
-                <li><a href="#Header">HOME</a></li>
-                <li><a href="#About">ABOUT US</a></li>
-                <li><a href="#Projects">PROJECTS</a></li>
-                <li><a href="#Team">TEAM</a></li>
-                <li><a href="#Socials">SOCIALS</a></li>
-                <li><a href="#Contact">CONTACT</a></li>
-            </ul>
-            <button id="Navigation-Button">&#9776;</button>
-        </nav>
-
         <div class="main-section" id="Header">
             <h1>The Shattered Crown</h1>
         </div>
-
         <div class="main-section" id="About">
             <br /><br /><br />
             <h1 class="Text-Underline">About us</h1>
@@ -35,7 +21,6 @@
                 our graphics suck and thats our only selling point
             </p>
         </div>
-
         <div class="main-section" id="Projects">
             <br /><br /><br />
             <h1 class="Text-Underline">Projects</h1>
@@ -46,7 +31,6 @@
                 point, so if you are interested in them refer back to this page.
             </p>
         </div>
-
         <div class="main-section" id="Team">
             <br /><br /><br />
             <h1 class="Text-Underline">Team</h1>
@@ -68,7 +52,6 @@
             </ul>
             </p>
         </div>
-
         <div class="main-section section" id="Socials">
             <br /><br /><br />
             <h1 class="Text-Underline">Socials</h1>
@@ -79,7 +62,6 @@
               <a href="https://www.youtube.com/@theshatteredcrown" target="_blank">www.youtube.com/@theshatteredcrown</a>
             </p>
         </div>
-
         <div class="main-section" id="Contact">
             <br /><br /><br />
             <h1 class="Text-Underline">Contact</h1>
@@ -90,19 +72,5 @@
                 at: <a href="mailto:theshatteredcrown.studio@gmail.com">theshatteredcrown.studio@gmail.com</a>
             </p>
         </div>
-
-        <script>
-            document
-                .getElementById("Navigation-Button")
-                .addEventListener("click", () => {
-                    document.querySelector("#Navigation-List").style.left = "0";
-                });
-            document
-                .querySelector("#Close-Button")
-                .addEventListener("click", () => {
-                    document.querySelector("#Navigation-List").style.left =
-                        "-70%";
-                });
-        </script>
     </body>
 </html>
