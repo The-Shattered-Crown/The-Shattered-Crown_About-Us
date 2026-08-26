@@ -20,6 +20,9 @@ body {
 
 .main-section > ul > li {
     list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: white;
 }
 
 .main-section > p {
@@ -62,22 +65,4 @@ body {
     transform: translateX(-50%);
     background: linear-gradient(90deg, cyan, blue, purple, orange);
     border-radius: 50px;
-}
-#Team {
-    padding: 25px;
-    text-align: center;
-}
-#Team ul li {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    color: white;
-}
-#About {
-    padding: 25px;
-    text-align: center;
-}
-#About > p {
-    font-size: 30px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
 }
