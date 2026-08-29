@@ -1,46 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Schoolbell&display=swap");
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
 body {
     /*if you change grid to flex I will explode*/
     display: grid;
     flex-direction: column;
-    background: #28282b;
     min-height: 100dvh;
     min-width: 100dvw;
+    background: floralwhite;
     place-items: center;
     text-align: center;
+    color: grey;
 }
 p {
     font-family: "Montserrat", sans-serif;
-    color: white;
     font-size: clamp(1.4rem, 2rem, 2.4rem);
 }
 li {
     font-family: "Montserrat", sans-serif;
-    color: white;
     font-size: clamp(1.4rem, 2rem, 2.4rem);
     margin-top: clamp(2rem, 3rem, 3.4rem);
     margin-bottom: clamp(2rem, 3rem, 3.4rem);
 }
-#Header {
-    background:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.645)),
-        url("Header.jpg");
+header {
     display: grid;
     background-size: cover;
     background-repeat: no-repeat;
     padding: clamp(6.6rem, 8rem, 8.4rem);
     background-attachment: fixed;
 }
-#Header > h1::before {
+header > h1::before {
     display: none;
 }
 h1 {
     font-size: clamp(4rem, 5rem, 5.5rem);
-    color: white;
     font-family: "Barrio", system-ui;
     position: relative;
     display: inline-block;
@@ -49,7 +40,6 @@ h1 {
 }
 h1::before {
     content: " ";
-    display: block;
     width: 100%;
     height: clamp(0.3rem, 0.5rem, 0.7rem);
     position: absolute;
