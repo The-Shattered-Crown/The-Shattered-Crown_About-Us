@@ -13,7 +13,6 @@ body {
     place-items: center;
     text-align: center;
 }
-/*Main section*/
 p {
     font-family: "Montserrat", sans-serif;
     color: white;
@@ -26,7 +25,6 @@ li {
     margin-top: clamp(2rem, 3rem, 3.4rem);
     margin-bottom: clamp(2rem, 3rem, 3.4rem);
 }
-/*Header behaviour*/
 #Header {
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.645)),
@@ -40,7 +38,6 @@ li {
 #Header > h1::before {
     display: none;
 }
-/*Text underline behaviour - applies to all h1 elements*/
 h1 {
     font-size: clamp(4rem, 5rem, 5.5rem);
     color: white;
