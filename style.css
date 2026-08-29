@@ -10,15 +10,9 @@ body {
     min-height: 100dvh;
     min-width: 100dvw;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 /*Main section divs*/
 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     padding: clamp(1rem, 1.6rem, 2rem);
@@ -44,9 +38,6 @@ p {
     background-repeat: no-repeat;
     padding: clamp(6.6rem, 8rem, 8.4rem);
     background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 #Header > h1::before {
     display: none;
@@ -66,6 +57,8 @@ h1::before {
     height: clamp(0.3rem, 0.5rem, 0.7rem);
     position: absolute;
     bottom: clamp(-0.5rem, -0.3rem, 0.2rem);
+    /*hey why do we need left 50% and can
+    it be changed to anything else?*/
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(90deg, cyan, blue, purple, orange);
