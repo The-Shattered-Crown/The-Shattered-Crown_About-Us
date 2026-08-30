@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=MedievalSharp&display=swap");
 body {
     /*if you change grid to flex I will explode*/
     display: grid;
-    flex-direction: column;
     min-height: 100dvh;
     min-width: 100dvw;
     background: floralwhite;
@@ -12,34 +11,39 @@ body {
     overflow-x: hidden;
 }
 p {
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(1.4rem, 2rem, 2.4rem);
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.6rem, 2.2rem, 2.6rem);
 }
 li {
     list-style-type: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Cinzel", serif;
     font-size: clamp(1.4rem, 2rem, 2.4rem);
     margin-top: clamp(2rem, 3rem, 3.4rem);
     margin-bottom: clamp(2rem, 3rem, 3.4rem);
 }
-header > h1::before {
-    display: none;
-}
 h1 {
     font-size: clamp(4rem, 5rem, 5.5rem);
-    font-family: "Barrio", system-ui;
+    font-family: "MedievalSharp", cursive;
+    position: relative;
+    margin-top: clamp(2.2rem, 3.2rem, 3.6rem);
+    margin-bottom: clamp(2.4rem, 3.6rem, 3.8rem);
+}
+h2 {
+    font-size: clamp(4rem, 5rem, 5.5rem);
+    font-family: "MedievalSharp", cursive;
     position: relative;
     margin-top: clamp(2.2rem, 3.2rem, 3.6rem);
     margin-bottom: clamp(2.2rem, 3.2rem, 3.6rem);
+
 }
-h1::before {
+h2::before {
     content: " ";
     width: 100%;
     height: clamp(0.3rem, 0.5rem, 0.7rem);
     position: absolute;
     bottom: clamp(-0.5rem, -0.3rem, 0.2rem);
-    /*TEMPORARY BG CHNAGE TILL I CAN REPLACE IT WITH A IMAGE*/
-    background: black;
-    /*background: linear-gradient(90deg, cyan, blue, purple, orange);*/
-    /*border-radius: clamp(2.6rem, 3rem, 3.2rem);*/
+    background-image: url("/images/Line_artwork_for_TSC.svg");
+    background-position: center;
+    background-size: 140% auto;
+    background-repeat: no-repeat;
 }
