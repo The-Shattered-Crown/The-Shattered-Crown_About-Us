@@ -9,23 +9,18 @@ body {
     place-items: center;
     text-align: center;
     color: grey;
+    overflow-x: hidden;
 }
 p {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(1.4rem, 2rem, 2.4rem);
 }
 li {
+    list-style-type: none;
     font-family: "Montserrat", sans-serif;
     font-size: clamp(1.4rem, 2rem, 2.4rem);
     margin-top: clamp(2rem, 3rem, 3.4rem);
     margin-bottom: clamp(2rem, 3rem, 3.4rem);
-}
-header {
-    display: grid;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: clamp(6.6rem, 8rem, 8.4rem);
-    background-attachment: fixed;
 }
 header > h1::before {
     display: none;
@@ -34,9 +29,8 @@ h1 {
     font-size: clamp(4rem, 5rem, 5.5rem);
     font-family: "Barrio", system-ui;
     position: relative;
-    display: inline-block;
-    margin-top: clamp(2rem, 3rem, 3.4rem);
-    margin-bottom: clamp(2rem, 3rem, 3.4rem);
+    margin-top: clamp(2.2rem, 3.2rem, 3.6rem);
+    margin-bottom: clamp(2.2rem, 3.2rem, 3.6rem);
 }
 h1::before {
     content: " ";
@@ -44,6 +38,8 @@ h1::before {
     height: clamp(0.3rem, 0.5rem, 0.7rem);
     position: absolute;
     bottom: clamp(-0.5rem, -0.3rem, 0.2rem);
-    background: linear-gradient(90deg, cyan, blue, purple, orange);
-    border-radius: clamp(2.6rem, 3rem, 3.2rem);
+    /*TEMPORARY BG CHNAGE TILL I CAN REPLACE IT WITH A IMAGE*/
+    background: black;
+    /*background: linear-gradient(90deg, cyan, blue, purple, orange);*/
+    /*border-radius: clamp(2.6rem, 3rem, 3.2rem);*/
 }
