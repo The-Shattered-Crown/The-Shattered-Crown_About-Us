@@ -42,7 +42,7 @@ h2::before {
     height: clamp(0.3rem, 0.5rem, 0.7rem);
     position: absolute;
     bottom: clamp(-0.5rem, -0.3rem, 0.2rem);
-    background-image: url("/images/Line_artwork_for_TSC.svg");
+    background-image: url("images/Line_artwork_for_TSC.svg");
     background-position: center;
     background-size: 140% auto;
     background-repeat: no-repeat;
