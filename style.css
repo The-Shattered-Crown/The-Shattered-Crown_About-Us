@@ -9,6 +9,7 @@ body {
     text-align: center;
     color: grey;
     overflow-x: hidden;
+    transition: background 0.2s;
 }
 p {
     font-family: "Cinzel", serif;
@@ -21,7 +22,8 @@ li {
     margin-top: clamp(2rem, 3rem, 3.4rem);
     margin-bottom: clamp(2rem, 3rem, 3.4rem);
 }
-h1 {
+h1,
+h2 {
     font-size: clamp(4rem, 5rem, 5.5rem);
     font-family: "MedievalSharp", cursive;
     position: relative;
@@ -29,12 +31,7 @@ h1 {
     margin-bottom: clamp(2.4rem, 3.6rem, 3.8rem);
 }
 h2 {
-    font-size: clamp(4rem, 5rem, 5.5rem);
-    font-family: "MedievalSharp", cursive;
-    position: relative;
-    margin-top: clamp(2.2rem, 3.2rem, 3.6rem);
     margin-bottom: clamp(2.2rem, 3.2rem, 3.6rem);
-
 }
 h2::before {
     content: " ";
@@ -46,4 +43,31 @@ h2::before {
     background-position: center;
     background-size: 140% auto;
     background-repeat: no-repeat;
+}
+body#dark-mode h2::before {
+    filter: invert(20%);
+}
+#darkmode-toggle {
+    position: fixed;
+    background-image: url("images/sun.png");
+    filter: invert(85%);
+    background-size: cover;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+body#dark-mode {
+    background: black;
+    color: floralwhite
+}
+body#dark-mode #darkmode-toggle {
+    background-image: url("images/moon.png");
+    background-color: black;
+}
+body#dark-mode img,
+body#dark-mode source {
+    filter: invert(100%);
 }
