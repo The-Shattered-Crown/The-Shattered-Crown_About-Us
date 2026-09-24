@@ -11,6 +11,7 @@
         html {
             background: floralwhite;
         }
+        html,
         body {
             /*if you change grid to flex I will explode*/
             display: grid;
@@ -53,15 +54,6 @@
             background-size: 140% auto;
             background-repeat: no-repeat;
         }
-        .darkmode-body {
-            color: floralwhite;
-        }
-        .darkmode {
-            background: black;
-        }
-        .darkmode h2::before {
-            filter: invert(20%);
-        }
         #darkmode-toggle {
             position: fixed;
             background-image: url("images/sun.png");
@@ -75,12 +67,19 @@
             z-index: 1;
             cursor: pointer;
         }
-        .darkmode #darkmode-toggle {
+        html.darkmode {
+            background-color: black;
+            color: floralwhite;
+        }
+        html.darkmode h2::before {
+            filter: invert(20%);
+        }
+        html.darkmode #darkmode-toggle {
             background-image: url("images/moon.png");
             background-color: black;
         }
-        .darkmode img,
-        .darkmode source {
+        html.darkmode img,
+        html.darkmode source {
             filter: invert(100%);
         }
     </style>
